@@ -1,0 +1,27 @@
+<APIProxy revision="50" name="jayasri-employees">
+    <DisplayName></DisplayName>
+    <Description>Learn.in API docs</Description>
+    <CreatedAt>1694964920312</CreatedAt>
+    <LastModifiedAt>1694964920312</LastModifiedAt>
+    <BasePaths>/jayasri/api/v1</BasePaths>
+    <Policies>
+        <Policy>SC-reverseGeocode</Policy>
+        <Policy>EV-extractVariables</Policy>
+        <Policy>EV-fetchAddress</Policy>
+        <Policy>AM-setPayload</Policy>
+        <Policy>JS-settargetrequest</Policy>
+        <Policy>PC-storeAddress</Policy>
+        <Policy>LC-getAddress</Policy>
+        <Policy>Verify-API-Key</Policy>
+        <Policy>KVM-getGeocode</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://JS-settargetrequest.js</Resource>
+    </Resources>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>
